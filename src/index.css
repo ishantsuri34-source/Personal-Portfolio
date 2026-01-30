@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body{
+  font-family: "poppins" , sans-serif;
+}
+
+h1,h2{
+  font-family: "Roboto" , sans-serif;
+}
+
+@layer utilities{
+  .gradient{
+background: linear-gradient(-45deg, #020024, #090979, #000000);
+
+  }
+}
+
+.field {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid black;
+  color:black;
+  outline: none;
+}
+
+.field:focus {
+  border-color: #2563eb;
+}
+.field option {
+  background-color: #ffffff;  /* white background */
+  color: #000000;             /* black text */
+  font-weight: 500;
+}
