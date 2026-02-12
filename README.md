@@ -1,3 +1,5 @@
+Personal Portfolio Website
+
 A modern, interactive, and performance-optimized personal portfolio website developed using React.js and Node.js. This project reflects a creative approach to UI/UX design, combining dynamic particle backgrounds, custom cursor animations, and smooth routing to deliver a unique and engaging user experience.
 
 The portfolio is designed to showcase projects, technical skills, and professional experience in a visually immersive yet structured manner. Special attention has been given to responsiveness, animation flow, and clean architecture to ensure both aesthetic appeal and maintainable code structure.
