@@ -1,4 +1,4 @@
-🚀 Personal Portfolio Website
+# 🚀 Personal Portfolio Website
 
 A modern, interactive, and performance-optimized Personal Portfolio Website developed using React.js and Node.js.
 
@@ -6,7 +6,7 @@ This project represents a creative and technical blend of advanced front-end eng
 
 The portfolio is designed to professionally showcase projects, technical expertise, and experience in a visually engaging yet structured format.
 
-✨ Project Highlights
+## ✨ Project Highlights
 
 ⚛️ Component-Based Architecture built with React.js
 
@@ -26,7 +26,7 @@ The portfolio is designed to professionally showcase projects, technical experti
 
 🧩 Scalable and Maintainable Architecture
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 Frontend
 
 React.js
@@ -41,7 +41,7 @@ Backend
 
 Node.js
 
-🎯 Core Objectives
+# 🎯 Core Objectives
 
 This project was built to:
 
