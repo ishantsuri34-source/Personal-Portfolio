@@ -4,31 +4,47 @@ import React, { useEffect, useMemo, useState, useRef } from "react";
 export default function Introanimation({ onFinish }) {
   const THEME_COLOR = "#9AC9FB";
 
-  const greetings = useMemo(() => [
-    "Hello",
-    "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
-    "नमस्ते",
-    "Hola",
-    "Bonjour",
-    "Ciao",
-    "Olá",
-    "Здравствуйте",
-    "Merhaba",
-    "Hej",
-    "Salam",
-  ], []);
+  const greetings = useMemo(
+    () => [
+      "Hello",
+      "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
+      "नमस्ते",
+      "Hola",
+      "Bonjour",
+      "Ciao",
+      "Olá",
+      "Здравствуйте",
+      "Merhaba",
+      "Hej",
+      "Salam",
+    ],
+    []
+  );
 
-  const TOTAL_TIME = 3000; 
+  const TOTAL_TIME = 3000;
   const PER_GREETING = Math.floor(TOTAL_TIME / greetings.length);
 
+  
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return false;
+    const hasSeenIntro = localStorage.getItem("hasSeenIntro");
+    return !hasSeenIntro;
+  });
+
   const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
   const audioRef = useRef(null);
 
+  // Save intro seen status
   useEffect(() => {
-    audioRef.current?.play().catch(() => {});
-  }, []);
+    if (visible) {
+      localStorage.setItem("hasSeenIntro", "true");
+      audioRef.current?.play().catch(() => {});
+    } else {
+      onFinish?.();
+    }
+  }, [visible, onFinish]);
 
+  // Greeting rotation
   useEffect(() => {
     if (!visible) return;
 
@@ -45,6 +61,7 @@ export default function Introanimation({ onFinish }) {
     return () => clearInterval(interval);
   }, [visible, greetings.length, PER_GREETING]);
 
+  // Auto close after TOTAL_TIME
   useEffect(() => {
     if (!visible) return;
 
@@ -81,7 +98,7 @@ export default function Introanimation({ onFinish }) {
 
             <button
               onClick={handleSkip}
-              className="absolute top-6 right-6 text-sm px-4 py-2 rounded-full border border-white/30
+              className="absolute top-6 right-6 text-sm px-4 py-2 rounded-full border border-white/30 
                          bg-white/5 hover:bg-white/10 backdrop-blur-md transition"
             >
               Skip
@@ -92,16 +109,16 @@ export default function Introanimation({ onFinish }) {
                 key={index}
                 className="relative font-semibold tracking-wide text-center px-6
                            text-4xl sm:text-5xl md:text-7xl lg:text-8xl"
-                initial={{ opacity: 0, y: 16, scale: 0.98, filter: "blur(0.4px)" }}
-                animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-                exit={{ opacity: 0, y: -16, scale: 1.02, filter: "blur(0.4px)" }}
-                transition={{ duration: 0.18, ease: "easeOut" }}
+                initial={{ opacity: 0, y: 16, scale: 0.98 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -16, scale: 1.02 }}
+                transition={{ duration: 0.18 }}
               >
                 {greetings[index]}
               </motion.h1>
             </AnimatePresence>
 
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[70%] max-w-420px h-4px bg-white/25 rounded-full overflow-hidden">
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[70%] max-w-105 h-1 bg-white/25 rounded-full overflow-hidden">
               <motion.div
                 className="h-full"
                 style={{ backgroundColor: THEME_COLOR }}

@@ -24,11 +24,11 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden text-white"
+      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-black text-white"
     >
  
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-24 left-24 w-80 h-80 bg-cyan-400/15 blur-[140px] rounded-full animate-pulse" />
+        <div className="absolute top-24 left-24 w-80 h-80 bg-purple-500/20 blur-[140px] rounded-full animate-pulse" />
         <div className="absolute bottom-24 right-24 w-96 h-96 bg-indigo-500/15 blur-[160px] rounded-full animate-pulse delay-700" />
       </div>
 
@@ -45,7 +45,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center gap-10">
           <motion.div
             className="w-36 h-36 md:w-52 md:h-52 rounded-2xl overflow-hidden border border-white/20
-            bg-linear-to-br from-cyan-400/20 to-indigo-500/20"
+            bg-linear-to-br from-blue-400/20 to-indigo-500/20"
          
           >
             <img src={profile} alt="profile" className="w-full h-full object-cover" />

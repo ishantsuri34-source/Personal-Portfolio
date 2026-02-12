@@ -67,7 +67,7 @@ export default function OverlayMenu({ isOpen, onClose }) {
     
             <button
               onClick={onClose}
-              className="absolute top-6 right-6 text-white text-3xl hover:text-fuchsia-400 transition-colors duration-200"
+              className="absolute top-6 right-6 text-white text-3xl hover:text-blue-400 transition-colors duration-200"
               aria-label="Close Menu"
             >
               <FiX />
@@ -89,7 +89,7 @@ export default function OverlayMenu({ isOpen, onClose }) {
                       group relative inline-block
                       text-4xl font-semibold text-white
                       transition-colors duration-300
-                      hover:text-fuchsia-400
+                      hover:text-purple-400
                     "
                     style={{
                       textShadow: "0 0 14px rgba(168,85,247,0.35)"
@@ -102,7 +102,7 @@ export default function OverlayMenu({ isOpen, onClose }) {
                         absolute left-0 -bottom-2
                         block h-0.5 w-full
                         origin-left scale-x-0
-                        bg-linear-to-r from-fuchsia-400 via-purple-400 to-cyan-400
+                        bg-linear-to-r from-white via-blue-300 to-indigo-400
                         transition-transform duration-300 ease-out
                         group-hover:scale-x-100
                       "

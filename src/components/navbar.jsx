@@ -64,7 +64,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Lightweight overlay instead of heavy blur */}
+
       <div
         className={`
           fixed inset-0 z-40
@@ -72,7 +72,7 @@ export default function Navbar() {
           ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
         `}
         style={{
-          background: "rgba(5,8,20,0.65)",   // fake glass effect
+          background: "rgba(5,8,20,0.65)",  
           willChange: "opacity"
         }}
         onClick={() => setMenuOpen(false)}

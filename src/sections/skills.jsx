@@ -92,11 +92,11 @@ export default function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="relative h-82 w-full py-20 flex flex-col items-center justify-center text-white bg-transparent overflow-hidden"
+      className="relative h-82 w-full py-20 flex flex-col items-center justify-center text-white bg-black overflow-hidden"
     >
  
-      <div className="pointer-events-none absolute top-0 left-0 w-72 h-72 bg-cyan-400/25 rounded-full blur-3xl animate-pulse" />
-      <div className="pointer-events-none absolute bottom-0 right-0 w-72 h-72 bg-indigo-500/30 rounded-full blur-3xl animate-pulse" />
+      <div className="pointer-events-none absolute top-0 left-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
+      <div className="pointer-events-none absolute bottom-0 right-0 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl animate-pulse" />
 
 
       <h2

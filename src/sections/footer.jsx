@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="relative w-full overflow-hidden py-24 flex items-center justify-center bg-transparent"
+      className="relative w-full overflow-hidden py-24 flex items-center justify-center bg-black"
     >
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />

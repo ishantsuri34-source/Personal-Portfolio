@@ -51,7 +51,7 @@ export default function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative h-[320vh] bg-transparent text-white"
+      className="relative h-[320vh]  bg-black text-white"
     >
       <motion.div
         className="sticky top-0 h-screen flex flex-col items-center justify-center px-6"

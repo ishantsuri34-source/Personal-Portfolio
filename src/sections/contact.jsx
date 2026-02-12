@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import ParticlesBackground from "../components/ParticlesBackground";
+// import ParticlesBackground from "../components/Particlesbackground";
 import Astra from "../assets/Astra.png";
 
 /* -------------------- EMAILJS ENV -------------------- */
@@ -98,11 +98,9 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen relative overflow-hidden text-white py-20 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10"
+      className="w-full min-h-screen relative bg-black overflow-hidden text-white py-20 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10"
     >
-      <ParticlesBackground />
-
-
+      
       <motion.div
         className="hidden md:flex w-full md:w-1/2 justify-center"
         initial={{ opacity: 0, x: -50 }}
