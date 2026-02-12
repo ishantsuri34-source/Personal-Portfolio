@@ -1,16 +1,55 @@
-# React + Vite
+A modern, interactive, and performance-optimized personal portfolio website developed using React.js and Node.js. This project reflects a creative approach to UI/UX design, combining dynamic particle backgrounds, custom cursor animations, and smooth routing to deliver a unique and engaging user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The portfolio is designed to showcase projects, technical skills, and professional experience in a visually immersive yet structured manner. Special attention has been given to responsiveness, animation flow, and clean architecture to ensure both aesthetic appeal and maintainable code structure.
 
-Currently, two official plugins are available:
+🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚛️ Built with React.js (Component-Based Architecture)
 
-## React Compiler
+🌐 Backend powered by Node.js
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎨 Modern UI/UX with a creative design approach
 
-## Expanding the ESLint configuration
+✨ Interactive Particle Background Effects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖱 Custom Cursor Animations
+
+🔄 Smooth Navigation using React Router DOM
+
+📱 Fully Responsive (Mobile-First Design)
+
+⚡ Optimized Performance & Clean Code Structure
+
+🛠 Tech Stack
+
+Frontend:
+
+React.js
+
+React Router DOM
+
+CSS3 / Modern Styling Techniques
+
+Backend:
+
+Node.js
+
+💡 What This Project Demonstrates
+
+Advanced front-end development skills
+
+Creative UI/UX implementation
+
+Strong understanding of React routing and component structuring
+
+Ability to integrate interactive animations without affecting performance
+
+Clean project architecture and scalability
+
+🎯 Purpose
+
+This portfolio was built to represent my technical expertise, creativity, and problem-solving approach through a modern and distinctive digital presence.
+
+👨‍💻 Developed By
+
+Ishant Suri
